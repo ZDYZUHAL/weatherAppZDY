@@ -10,20 +10,31 @@
     <div class="app">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+          <input
+            class="input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="btn" type="submit" value="Search" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 14:49, scattered clouds
-            <br />
-            Humidity: 66%, Wind: 3.13km/h
-          </p>
+        <div class="data">
+          <div>
+            <h1 class="city">Paris</h1>
+            <p class="detels">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity:<strong>66%</strong> , Wind:<strong> 3.13km/h</strong>
+            </p>
+          </div>
+          <div class="tempcontiner">
+            <div class="emoji">⛅</div>
+            <div class="num">12</div>
+            <div class="=gread">°C</div>
+          </div>
         </div>
-        <div>🌤️ 12°C</div>
       </main>
 
       <footer>
