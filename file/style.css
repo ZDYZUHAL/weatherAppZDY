@@ -154,7 +154,7 @@ main {
 .tempcontiner {
   display: flex;
 }
-.num {
+.temperature {
   font-size: 88px;
   font-weight: bold;
 }
