@@ -2,6 +2,7 @@ function refresh(response) {
   let numelement = document.querySelector("#temperature");
   let temprecher = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
+  consol.log(response.data);
   cityElement.innerHTML = response.data.city;
   numelement.innerHTML = math.round(temperature);
 }
