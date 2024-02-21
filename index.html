@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="file/style.css" />
-    <title>Meteo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>ZDY App</title>
   </head>
   <body>
     <div class="weather-app">
@@ -29,16 +30,18 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">Paris</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              Tuesday 14:49, scattered clouds
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">12</div>
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weatehr-app-unit">°C</div>
           </div>
         </div>
@@ -46,14 +49,15 @@
 
       <footer>
         This project was coded by
-        <a href="https://github.com/matthieua/" target="_blank"> Matt Delac</a>,
-        is
-        <a href="https://github.com/matthieua/meteo" target="_blank"
-          >open-sourced on GitHub</a
+        <a href="https://github.com/ZDYZUHAL/weatherAppZDY" target="_blank">
+          Zuhal Yousofi</a
+        >, is
+        <a href="https://github.com/ZDYZUHAL/weatherAppZDY" target="_blank"
+          >link on GitHub</a
         >
         and
         <a href="https://meteo-shecodes-app.netlify.app/" target="_blank"
-          >hosted on Netlify</a
+          >link on Netlify</a
         >
       </footer>
     </div>
